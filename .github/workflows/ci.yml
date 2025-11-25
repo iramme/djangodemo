@@ -63,3 +63,5 @@ jobs:
         with:
           service-id: ${{ secrets.SERVICE_ID }}
           api-key: ${{ secrets.RENDER_API_KEY }}
+      - name: Install Gunicorn
+        run: pip install gunicorn==22.1.0
